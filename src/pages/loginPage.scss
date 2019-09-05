@@ -1,0 +1,29 @@
+
+@import "../partial";
+
+
+    /* LAYOUT */
+
+.wrapper {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: $BackgroundColor;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 60% 20%;
+}
+
+    /* Header */
+
+.form {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  height: 100%;
+  &__heading {
+    font-family: $MainFont;
+    font-size: 4em;
+    color: $TextColor;
+    text-align: center;
+  }
+}
