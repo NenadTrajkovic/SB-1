@@ -1,4 +1,6 @@
 
+@import "./partial";
+
      /* BASE */
 
 *, 
@@ -16,9 +18,6 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -52,9 +51,27 @@ label {
   cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+input {
+  padding-left: 3%;
 }
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+:focus {
+  outline: .04em dotted $TextColor;
+}
+
 
 

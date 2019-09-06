@@ -9,8 +9,8 @@
   min-height: 100vh;
   background-color: $BackgroundColor;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 15% 70% 15%;
 }
 
     /* Header */
@@ -22,8 +22,18 @@
   height: 100%;
   &__heading {
     font-family: $MainFont;
-    font-size: 4em;
+    font-size: 3.6em;
+    height: auto;
     color: $TextColor;
     text-align: center;
+  }
+  &__reset {
+    display: block;
+    font-family: $MainFont;
+    font-size: 1.9em;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: 1.5em auto 0;
   }
 }
