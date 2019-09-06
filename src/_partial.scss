@@ -7,3 +7,10 @@ $BackgroundColor: #fcf8f2;
 $TextColor: #968d7c; 
 $ButtonBGColor: #100b5f;
 $InputColor: #0e00ff;
+
+@mixin border-radius {
+  border-top-left-radius: 2em 50%;
+  border-bottom-left-radius: 2em 50%;
+  border-top-right-radius: 2em 50%;
+  border-bottom-right-radius: 2em 50%;
+}

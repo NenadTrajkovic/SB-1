@@ -12,7 +12,7 @@ label {
 input[type=checkbox] + label {
   display: block;
   cursor: pointer;
-  padding: 0 0 0 12.5%;
+  padding: 0 0 0 6.7%;
   margin: .2em;
 }
 
@@ -21,11 +21,11 @@ input[type=checkbox] {
 }
 
 input[type=checkbox] + label:before {
-  width: 1.4em;
+  width: 1.45em;
   height: 1.3em;
   display: inline-block;
-  padding-left: .26em;
-  padding-bottom: 1.25em;
+  padding-left: .27em;
+  padding-bottom: 1.26em;
   margin: 0 .5em 0 0;
   content: "\2714";
   border: .08em solid $TextColor;
@@ -47,5 +47,5 @@ input[type=checkbox] + label:active:before {
 
 .checkbox {
   display: block;
-  margin: 2em 0 0 0;
+  margin: 1.8em 0 0 0;
 }
