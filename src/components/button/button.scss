@@ -2,7 +2,7 @@
 @import "../../partial";
 
 
-.login__button {
+.button {
   width: 38%;
   height: 2.8em;
   display: block;
@@ -17,6 +17,6 @@
   border-bottom-right-radius: 1.4em 50%;
 }
 
-.login__button:hover {
+.button:hover {
   cursor: pointer;
 }

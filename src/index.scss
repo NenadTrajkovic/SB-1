@@ -1,5 +1,6 @@
 
 @import "./partial";
+@import "./components/reset/reset.scss";
 
      /* BASE */
 
@@ -52,7 +53,8 @@ label {
 }
 
 input {
-  padding-left: 4.2%;
+  padding-left: 4.3%;
+  letter-spacing: .05em;
 }
 
 input:focus {

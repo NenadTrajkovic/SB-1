@@ -13,3 +13,5 @@
 .email:focus {
   border: .1em solid $InputColor;
 }
+
+@include error;
