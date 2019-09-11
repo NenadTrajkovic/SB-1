@@ -3,7 +3,7 @@ import React from "react";
 import "./checkbox.scss";
 
 
-const Checkbox = ({checked, toggleChange, ...props}) => {
+const Checkbox = ({checked, toggleChange}) => {
   return (
     <span className="checkbox">   
       <input  type="checkbox"

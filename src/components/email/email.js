@@ -3,16 +3,15 @@ import React from "react";
 import "./email.scss";
 
 
-const Email = ({email_input, emailFunc, blur, errorCheck}) => {
+const Email = ({email_input, emailFunc}) => {
   return (
     <span>
       <label  htmlFor="userName"></label>
-        <input  className={errorCheck("email") ? "error" : "email"} 
+        <input  className="email"
                 type="email" 
                 id="userName" 
                 value={email_input}
                 onChange={emailFunc}
-                onBlur={blur("email")} 
                 required
                 placeholder="Email address" 
           />

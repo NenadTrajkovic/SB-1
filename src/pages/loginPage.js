@@ -12,10 +12,6 @@ class LoginPage extends Component {
   state = {      
     email: "",      
     password: "",      
-    touched: {  
-      email: false, 
-      password: false
-    },
     checked: false,
     submited: false
   };
@@ -48,12 +44,6 @@ class LoginPage extends Component {
     };
   }
 
-  blur = (field) => (e) => {   
-    this.setState({      
-      touched: { ...this.state.touched, [field]: true }
-    });  
-  }
-
   reset = () => {
     this.setState({
       email: "",
@@ -77,11 +67,6 @@ class LoginPage extends Component {
   
     const errors = this.validate(this.state.email, this.state.password);
     const isEnabled = !Object.keys(errors).some(x => errors[x]);
-    const errorCheck = (field) => { 
-      const hasError = errors[field];      
-      const shouldShow = this.state.touched[field];
-        return hasError ? shouldShow : false 
-    };
 
   return (
     <div className="wrapper">
@@ -90,16 +75,10 @@ class LoginPage extends Component {
 
           <Email  email_input={this.state.email}
                   emailFunc={this.emailFunc}
-                  blur={this.blur}
-                  errorCheck={errorCheck} 
-                  errors={errors}
           /> 
                   
           <Password password_input={this.state.password}
                     passwordFunc={this.passwordFunc}
-                    blur={this.blur}
-                    errorCheck={errorCheck} 
-                    errors={errors}
           />
                     
           <Checkbox checked={this.state.checked}

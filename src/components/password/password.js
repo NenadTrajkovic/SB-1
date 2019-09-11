@@ -3,16 +3,15 @@ import React from "react";
 import "./password.scss";
 
 
-const Password = ({password_input, passwordFunc, blur, errorCheck}) => {
+const Password = ({password_input, passwordFunc}) => {
   return (
     <span>
       <label  htmlFor="pass"></label>
-      <input  className={errorCheck("password") ? "error" : "password"}  
+      <input  className="password"
               type="password" 
               id="pass"
               value={password_input}
               onChange={passwordFunc}
-              onBlur={blur("password")} 
               required 
               placeholder="Password" 
         />
